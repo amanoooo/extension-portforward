@@ -13,16 +13,3 @@ changeColor.onclick = function (element) {
     })
   })
 }
-
-const switchBtn = document.getElementById('switch')
-
-switchBtn.onclick = function (element) {
-  const input = document.getElementById('localPort')
-  const localPort = input.value
-  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-    chrome.tabs.executeScript(tabs[0].id, {
-      code: 'console.log("localPort: %d ",' + localPort + ')'
-    })
-    // {code: 'document.body.style.backgroundColor = "' + 'green' + '";'});
-  })
-}
