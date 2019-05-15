@@ -1,3 +1,9 @@
+// import styled from 'styled-components'
+const styled = require('styled-components')
+const React = require('react')
+const ReactDOM = require('react-dom')
+
+console.log('styled ', styled)
 class Root extends React.Component {
     state = {
         localPort: 3001
