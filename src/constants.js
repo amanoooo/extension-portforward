@@ -1,0 +1,14 @@
+const CMD_GENERATE = 'CMD_GENERATE'
+const CMD_CLOSE = 'CMD_CLOSE'
+const CMD_GET_CON = 'CMD_GET_CON'
+const CMD_ERR_PORT = 'CMD_ERR_PORT'
+const CMD_SERVER_PORT = 'CMD_SERVER_PORT'
+
+
+module.exports = {
+    CMD_GENERATE,
+    CMD_CLOSE,
+    CMD_GET_CON,
+    CMD_ERR_PORT,
+    CMD_SERVER_PORT,
+}
