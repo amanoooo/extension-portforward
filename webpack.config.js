@@ -3,8 +3,9 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        background: './src/index.js',
-        content: './src/content.js'
+        main: './src/main.js',
+        content: './src/content.js',
+        background: './src/background.js'
     },
     output: {
         filename: '[name].bundle.js',
@@ -19,5 +20,6 @@ module.exports = {
         ]
     },
     mode: 'development',
+    // mode: 'production',
     watch: true
 };
