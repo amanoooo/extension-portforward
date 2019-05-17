@@ -1,5 +1,5 @@
 {
-  "name": "extention-portforward",
+  "name": "extension-portforward",
   "version": "1.0.0",
   "description": "",
   "main": "background.js",
@@ -21,8 +21,7 @@
     "socket.io-client": "^2.2.0",
     "styled-components": "^4.2.0",
     "uuid": "^3.3.2",
-    "webpack": "^4.31.0",
-    "webpack-cli": "^3.3.2"
+    "webpack": "^4.31.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -31,6 +30,7 @@
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "webpack-cli": "^3.3.2"
   }
 }
