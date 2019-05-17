@@ -5,7 +5,9 @@
   "permissions": [
     "activeTab",
     "declarativeContent",
-    "storage"
+    "storage",
+    "http://*/",
+    "https://*/"
   ],
   "background": {
     "scripts": [
@@ -13,6 +15,16 @@
     ],
     "persistent": false
   },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ],
   "page_action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -29,6 +41,6 @@
     "128": "images/get_started128.png"
   },
   "options_page": "options.html",
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' ; object-src 'self'",
   "manifest_version": 2
 }
